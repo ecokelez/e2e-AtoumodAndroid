@@ -35,7 +35,7 @@ public class Driver {
                 appiumDriver = new AppiumDriver<>(appiumServerURL,caps);
                 appiumDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
             }else {
-                throw new UnsupportedOperationException("Invalid Platform Name" + ConfigReader.getProperty("platformName"));
+                throw new UnsupportedOperationException(" Invalid Platform Name " + ConfigReader.getProperty("platformName"));
             }
 
         }
